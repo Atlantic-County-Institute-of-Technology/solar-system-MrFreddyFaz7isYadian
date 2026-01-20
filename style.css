@@ -1,0 +1,26 @@
+body.space {
+	
+	overflow: hidden; /* anything that exceeds the bounds of the screen will be hidden */
+	background: url('images/bg.jpg');
+	background-size: cover;
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	align-items: center; /* centers all children along a single axis */
+	justify-content: center;
+}
+
+#mainContent {
+	position: relative;
+	width: 800px;
+	height: 800px;
+	display: flex; /* centers the main content pane itself */
+	justify-content: center;
+	align-items: center;
+}
+
+.planets {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
