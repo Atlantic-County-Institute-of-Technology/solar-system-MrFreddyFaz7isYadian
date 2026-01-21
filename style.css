@@ -26,53 +26,42 @@ body.space {
 }
 @keyframes move_crewmate {
     0% {
-        transform: translateX(0px);
+        transform: translateX(0px) rotate(360deg);
     }
     25%{
-        transform: translateX(445px);
+        transform: translateX(445px) rotate(360deg);
     }
     
     
     100% { 
-		transform: translateX(445px); 
+		transform: translateX(445px) rotate(360deg); 
     }
 }
 
-.sun {
-
+@keyframes move_Dess {
+	0% {
+		transform: translateX(0px);
+	}
+	25% {
+		transform: translateX(445px);
+	}
+	100% {
+		transform: translateX(600px);
+	}
 }
 
-.mercury {
-
+@keyframes move_Truck {
+0% {
+	transform: translateX(0px);
+}
+25% {
+	transform: translateX(445px);
+}
+100% {
+	transform: translateX(600px);
+}
 }
 
-.venus {
-
-}
-
-.earth {
-
-}
-
-.mars {
-
-}
-
-.jupiter {
-
-}
-
-.saturn {
-
-}
-
-.uranus {
-
-}
-
-.neptune {
-
-}
 
 .crewmate {
 position: relative;
@@ -81,5 +70,17 @@ left: -170px;
 animation: move_crewmate 10s infinite;
 }
 
+.Dess {
+	position: relative;
+	height: 60px;
+	animation: move_Dess 10s infinite;
+}
 
+
+.TRUCK {
+	position: relative;
+	height: 80px;
+	animation: move_Truck 10s infinite;
+	animation-delay: 2s;
+}
 
